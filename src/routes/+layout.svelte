@@ -1,5 +1,6 @@
 <script>
-    import Navbar from "../lib/components/Navbar.svelte";
+    import "../app.pcss";
+    import { ModeWatcher } from "mode-watcher";
   </script>
   
   <style>
@@ -9,17 +10,13 @@
       min-height: 100vh;
       font-family: 'Courier New', Courier, monospace;
     }
-  
-    main {
-      margin: 20px;
-      padding: 20px;
-      background-color: #fff;
-    }
-  
+
 
   </style>
-  
+    <ModeWatcher />
+
   <div class="layout">
+
     <main>
       <slot></slot> 
     </main>

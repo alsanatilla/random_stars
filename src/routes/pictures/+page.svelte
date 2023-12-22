@@ -46,9 +46,7 @@
   }
 </style>
 
-{#await data}
-loading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading picturesloading pictures..
-{:then data}
+
 {#if currentIndex >= 0}
   <img class="header-image" src={data.images[currentIndex]} alt="Photo from Mars Curiosity Rover">
   <div class="nav-buttons">
@@ -56,4 +54,3 @@ loading picturesloading picturesloading picturesloading picturesloading pictures
     <button on:click={nextImage}>Next</button>
   </div>
 {/if}
-{/await}
